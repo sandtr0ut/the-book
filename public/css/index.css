@@ -1,0 +1,245 @@
+.hero-body .container {
+    max-width: 700px;
+}
+.hero-body .title {
+    color: #333333 !important;
+}
+.hero-body .subtitle {
+    color: #333333 !important;
+    padding-top: 4rem;
+    line-height: 1.5;
+}
+.features {
+    padding: 5rem 0;
+}
+.box.cta {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+}
+.card-image > .fa {
+    font-size: 8rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: #209cee;
+}
+.card-content .content {
+    font-size: 14px;
+    margin: 1rem 1rem;
+}
+.card-content .content h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+.card {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+    margin-bottom: 2rem;
+}
+.intro {
+    padding: 3rem 0;
+    text-align: center;
+}
+.sandbox {
+    padding: 5rem 0;
+    text-align: center;
+}
+.tile.notification {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.is-shady {
+    animation: flyintoright 0.4s backwards;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+.is-shady:hover {
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.13), 0 6px 6px rgba(0, 0, 0, 0.19);
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "helvetica", "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: #ededed;
+}
+.main_hero {
+    background: #f0f0f0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+a.is-primary {
+    background-color: #03b2e3 !important;
+    border: 1px solid #03b2e3 !important;
+}
+a.is-primary:hover {
+    background-color: transparent !important;
+    color: #000 !important;
+}
+a.button {
+    font-size: 14px;
+}
+.main_title {
+    color: #fff;
+}
+.columns {
+    flex-wrap: wrap;
+}
+.modal-content {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 5px;
+}
+.slider-content {
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 1s;
+}
+.rooms {
+    background-color: #fff;
+    padding: 1em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.reception-image img {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.reception-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    padding: 1em 2em;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.reception-item i {
+    width: 20px;
+}
+.reception-item a {
+    color: #000;
+}
+.reception-item .button {
+    border: 1px solid #03b2e3;
+    width: 50px;
+}
+.reception-item .button i {
+    width: auto;
+    padding-right: 5px;
+}
+.reception-item .button:hover {
+    background-color: #03b2e3;
+    color: #fff;
+}
+.mobile-only {
+    display: none;
+}
+@media only screen and (max-width: 769px) {
+    .reception-item {
+        width: 100%;
+    }
+    .mobile-only {
+        display: block;
+    }
+    .reception-item {
+        padding: 1em;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .mobile-only {
+        display: none;
+    }
+}
+iframe {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.ed-contact-form {
+    padding: 2em;
+}
+.newsletter-form {
+    display: flex;
+}
+.newsletter-form input {
+    width: 75%;
+    height: 40px;
+    border: 0;
+    outline: none;
+    padding: 0 15px;
+    font-size: 14px;
+    background-color: #5c677b;
+    color: #fff;
+}
+.newsletter-form ::-webkit-input-placeholder {
+    color: #fff;
+}
+.newsletter-form ::-moz-placeholder {
+    color: #fff;
+}
+.newsletter-form ::-ms-input-placeholder {
+    color: #fff;
+}
+.newsletter-form ::-moz-placeholder {
+    color: #fff;
+}
+.newsletter-form button {
+    width: 50px;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #d77b5d;
+    outline: none;
+    border: 0;
+}
+a {
+    color: #fff;
+}
+.main-text {
+    color: red;
+}
+.navbar {
+    box-shadow: none;
+}
+.navbar-item {
+    color: #484848;
+}
+.section-heading {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 6em;
+}
+
+.main-block-thing {
+    background-image: url("/images/background.jpg");
+    background-size: cover;
+    min-height: 450px;
+}
+
+.first_nav {
+    background: white;
+}
+
+.title {
+    color: black !important;
+}
+
+th,
+td {
+    text-align: center !important;
+}
+
+.sportTitle {
+    margin: 20px;
+    size: 32px;
+}

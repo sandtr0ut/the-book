@@ -1,0 +1,46 @@
+<div class="column is-one-quarter">
+    <code>
+        <table class="table is-narrow is-bordered is-striped is-hoverable" style="width:100%">
+        <tr>
+            <th>Home</th>
+            <th>{{this.eventDate}}</th>
+            <th>Away</th>
+        </tr>
+        <tr>
+            <td>{{this.homeTeam}}</td>
+            <td></td>
+            <td>{{this.awayTeam}}</td>
+        </tr>
+        <tr>
+            <td>{{this.homePoints}}</td>
+            <td>Points</td>
+            <td>{{this.awayPoints}}</td>
+        </tr>
+        <tr>
+            <td>{{this.homeMoney}}</td>
+            <td>MoneyLine</td>
+            <td>{{this.awayMoney}}</td>
+        </tr>
+    </table>
+
+    <table class="table is-narrow is-bordered is-striped is-hoverable" style="width:100%">
+        <tr>
+            <th colspan="3">Total</th>
+        </tr>
+        <tr>
+            <td>Over</td>
+            <td>{{this.totalOver}}</td>
+            <td>{{this.totalOverMoney}}</td>
+        </tr>
+        <tr>
+            <td>Under</td>
+            <td>{{this.totalUnder}}</td>
+            <td>{{this.totalUnderMoney}}</td>
+        </tr>
+    </table>
+    
+    
+    <br>
+    
+    </code>
+</div>

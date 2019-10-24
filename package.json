@@ -1,0 +1,49 @@
+{
+    "name": "node-handlebars-boilerplate",
+    "version": "1.0.0",
+    "description": "Project 2 Starter",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "lint": "eslint --quiet .",
+        "fix": "eslint --fix .",
+        "test": "npm run lint && cross-env NODE_ENV=test mocha -u tdd --reporter spec --exit"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.19.0",
+        "bulma": "^0.7.5",
+        "dotenv": "^6.2.0",
+        "express": "^4.17.1",
+        "express-handlebars": "^3.1.0",
+        "handlebars-form-helpers": "^0.1.4",
+        "inquirer": "^6.3.1",
+        "mysql2": "^1.6.4",
+        "sequelize": "^4.41.2"
+    },
+    "devDependencies": {
+        "chai": "^4.1.2",
+        "chai-http": "^4.0.0",
+        "cross-env": "^5.2.0",
+        "eslint": "^4.19.1",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-config-prettier": "^2.9.0",
+        "eslint-plugin-import": "^2.17.3",
+        "eslint-plugin-prettier": "^2.6.2",
+        "mocha": "^5.2.0",
+        "prettier": "^1.13.7"
+    },
+    "directories": {
+        "test": "test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sandtr0ut/Project2.git"
+    },
+    "keywords": [],
+    "author": "",
+    "bugs": {
+        "url": "https://github.com/sandtr0ut/Project2/issues"
+    },
+    "homepage": "https://github.com/sandtr0ut/Project2#readme"
+}
