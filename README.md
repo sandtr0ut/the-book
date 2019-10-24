@@ -1,8 +1,3 @@
-# Project2
-Group 3 - Project 2
-
----
-
 # **theBook**
 
 > ## Your Personalized Sports Dashboard for Wagering Information, Execution and Tracking
