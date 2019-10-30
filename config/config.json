@@ -1,0 +1,21 @@
+{
+    "development": {
+        "username": "postgres",
+        "password": "pgroot",
+        "database": "thebookdb",
+        "host": "localhost",
+        "dialect": "postgres"
+    },
+    "test": {
+        "username": "postgres",
+        "password": "pgroot",
+        "database": "testdb",
+        "host": "localhost",
+        "dialect": "postgres",
+        "logging": false
+    },
+    "production": {
+        "use_env_variable": "postgres://jynyvgilsgrbpd:b3926b9f160526b1d2c1259c099a1be081985ebbade76d3209cbd16d2a1ddc0f@ec2-174-129-231-116.compute-1.amazonaws.com:5432/df77b4noeri0jq",
+        "dialect": "postgres"
+    }
+}
