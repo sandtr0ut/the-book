@@ -5,18 +5,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Place your bets at The Book">
+    <meta name="theBook" content="Place your bets!">
     <title>The Book</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
     <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -73,28 +70,31 @@
                                 <div class="field">
                                     <label class="label">First Name</label>
                                     <div class="control">
-                                        <input class="input" id="first" type="text" placeholder="First Name">
+                                        <input class="input" id="first" type="text" placeholder="First Name"
+                                            name="firstName">
                                     </div>
                                 </div>
 
                                 <div class="field">
                                     <label class="label">Last Name</label>
                                     <div class="control">
-                                        <input class="input" id="last" type="text" placeholder="Last Name">
+                                        <input class="input" id="last" type="text" placeholder="Last Name"
+                                            name="lastName">
                                     </div>
                                 </div>
 
                                 <div class="field">
                                     <label class="label">Email</label>
                                     <div class="control">
-                                        <input class="input" id="email" type="text" placeholder="Email">
+                                        <input class="input" id="email" type="text" placeholder="Email" name="email">
                                     </div>
                                 </div>
 
                                 <div class="field">
                                     <label class="label">Password</label>
                                     <div class="control">
-                                        <input class="input" id="password" type="text" placeholder="Password">
+                                        <input class="input" id="password" type="text" placeholder="Password"
+                                            name="password">
                                     </div>
                                 </div>
 
@@ -118,7 +118,9 @@
 </body>
 
 {{!-- <script src="/public/js/bulma.js"></script> --}}
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 {{!-- <script src="/public/js/index.js"></script> --}}
 
 </html>

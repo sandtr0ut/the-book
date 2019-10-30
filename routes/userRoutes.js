@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
 var db = require("../models");
+const Sequelize = require("sequelize");
 
 module.exports = function(app) {
   app.get("/user/auth", function(request, response) {
@@ -49,64 +50,79 @@ module.exports = function(app) {
       }
     });
   });
+
+  //   app.post("/user", function(request, response) {
+  //     const { firstName, lastName, email, password, preferences } = request.body;
+  //     let responseObject = { userId: -1, errorMessage: "", success: false };
+  //     const requiredParams = ["firstName", "lastName", "email", "password"];
+  //     for (reqParam of requiredParams) {
+  //       if (!request.body[reqParam]) {
+  //         responseObject.errorMessage = `Request is missing ${reqParam} from the request body, and is a required parameter`;
+  //         response
+  //           .status(400)
+  //           .send(responseObject)
+  //           .end();
+  //         return;
+  //       }
+  //     }
+  //     db.User.findOne({
+  //       where: { email }
+  //     })
+  //       .then(existingUser => {
+  //         if (!existingUser) {
+  //           db.User.create({ firstName, lastName, email, password, preferences })
+  //             .then(newUser => {
+  //               responseObject.userId = newUser.id;
+  //               responseObject.user = newUser;
+  //               response
+  //                 .status(200)
+  //                 .send(responseObject)
+  //                 .end();
+  //               return;
+  //             })
+  //             .catch(err => {
+  //               responseObject.error = err;
+  //               responseObject.errorMessage = "Encountered an unknown error";
+  //               response
+  //                 .status(400)
+  //                 .send(responseObject)
+  //                 .end();
+  //               return;
+  //             });
+  //         } else {
+  //           responseObject.errorMessage =
+  //             "A user already exists with the given email address";
+  //           response
+  //             .status(400)
+  //             .send(responseObject)
+  //             .end();
+  //           return;
+  //         }
+  //       })
+  //       .catch(err => {
+  //         responseObject.error = err;
+  //         responseObject.errorMessage = "Encountered an unknown error";
+  //         response
+  //           .status(400)
+  //           .send(responseObject)
+  //           .end();
+  //         return;
+  //       });
+  //   });
+
   app.post("/user", function(request, response) {
-    const { firstName, lastName, email, password, preferences } = request.body;
-    let responseObject = { userId: -1, errorMessage: "", success: false };
-    const requiredParams = ["firstName", "lastName", "email", "password"];
-    for (reqParam of requiredParams) {
-      if (!request.body[reqParam]) {
-        responseObject.errorMessage = `Request is missing ${reqParam} from the request body, and is a required parameter`;
-        response
-          .status(400)
-          .send(responseObject)
-          .end();
-        return;
-      }
-    }
-    db.User.findOne({
-      where: { email }
-    })
-      .then(existingUser => {
-        if (!existingUser) {
-          db.User.create({ firstName, lastName, email, password, preferences })
-            .then(newUser => {
-              responseObject.userId = newUser.id;
-              responseObject.user = newUser;
-              response
-                .status(200)
-                .send(responseObject)
-                .end();
-              return;
-            })
-            .catch(err => {
-              responseObject.error = err;
-              responseObject.errorMessage = "Encountered an unknown error";
-              response
-                .status(400)
-                .send(responseObject)
-                .end();
-              return;
-            });
-        } else {
-          responseObject.errorMessage =
-            "A user already exists with the given email address";
-          response
-            .status(400)
-            .send(responseObject)
-            .end();
-          return;
-        }
-      })
-      .catch(err => {
-        responseObject.error = err;
-        responseObject.errorMessage = "Encountered an unknown error";
-        response
-          .status(400)
-          .send(responseObject)
-          .end();
-        return;
-      });
+    db.User.create({
+      firstName: request.body.firstName,
+      lastName: request.body.lastName,
+      email: request.body.email,
+      password: request.body.password
+    }).then(data => {
+      console.log(data);
+      response.redirect("/");
+    });
   });
+
+  //   ======UPDATE USER========
   app.put("/user/:id", function(request, response) {
     const { id } = request.params;
     db.User.findOne({ where: { id } }).then(user => {

@@ -63,14 +63,14 @@ function getSports(id, request, response) {
           eventDate: game.event_date,
           awayTeam: game.teams[0].name,
           homeTeam: game.teams[1].name,
-          awayPoints: game["lines"]["10"]["spread"]["point_spread_away"],
-          homePoints: game["lines"]["10"]["spread"]["point_spread_home"],
-          awayMoney: game["lines"]["10"]["moneyline"]["moneyline_away"],
-          homeMoney: game["lines"]["10"]["moneyline"]["moneyline_home"],
-          totalOver: game["lines"]["10"]["total"]["total_over"],
-          totalUnder: game["lines"]["10"]["total"]["total_under"],
-          totalOverMoney: game["lines"]["10"]["total"]["total_over_money"],
-          totalUnderMoney: game["lines"]["10"]["total"]["total_under_money"]
+          awayPoints: game["lines"]["3"]["spread"]["point_spread_away"],
+          homePoints: game["lines"]["3"]["spread"]["point_spread_home"],
+          awayMoney: game["lines"]["3"]["moneyline"]["moneyline_away"],
+          homeMoney: game["lines"]["3"]["moneyline"]["moneyline_home"],
+          totalOver: game["lines"]["3"]["total"]["total_over"],
+          totalUnder: game["lines"]["3"]["total"]["total_under"],
+          totalOverMoney: game["lines"]["3"]["total"]["total_over_money"],
+          totalUnderMoney: game["lines"]["3"]["total"]["total_under_money"]
         };
         eventsArray.push(details);
       }
